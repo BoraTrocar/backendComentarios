@@ -23,9 +23,9 @@ FROM openjdk:17-jdk-slim
 WORKDIR /app
 
 # Copie o JAR construído da imagem de compilação
-COPY --from=build /app/target/BoraTrocarComentarios-3.1.6.jar .
+COPY --from=build /app/target/boraTrocarComentarios-3.1.5.jar .
 
-EXPOSE 8090
+EXPOSE 8020
 
 # Defina o comando padrão para executar o aplicativo
-CMD ["java", "-jar", "BoraTrocarComentarios-3.1.6.jar"]
+CMD ["java", "-jar", "boraTrocarComentarios-3.1.5.jar"]
